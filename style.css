@@ -272,4 +272,48 @@ a {
 	color: #ff7c2d;
 }
 /*box---end*/
-//*box---end*//
+/*footer---start*/
+.footer {
+	height: 387px;
+	padding-top: 30px;
+	background-color: #fff;
+
+}
+.copyright {
+	float: left;
+}
+.copyright p {
+	font-size: 12px;
+	color: #666;
+	margin:20px 0 15px 0;
+}
+.app {
+	display: block;
+	width: 118px;
+	height: 34px;
+	border:1px solid #00a4ff;
+	font-size: 16px;
+	color: #00a4ff;
+	line-height: 34px;
+	text-align: center;
+}
+.links {
+	float: right;
+}
+.links dl {
+	float: left;
+	margin-left: 100px;
+}
+.links dt {
+	height: 35px;
+	font-size: 16px;
+	color: #333;
+}
+.links dd a {
+	font-size: 12px;
+    color: #333;
+}
+.links dd a:hover {
+	color: #00a4ff;
+}
+/*footer---end*/
