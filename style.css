@@ -35,6 +35,18 @@ a {
 	width: 1200px;
 	margin: auto;
 }
+.fixbar {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	/*版心宽度的一半600+本身宽度180+10px小缝隙*/
+	margin-left: -790px;
+	/*都是定位，层级放大，显示在最上层*/
+	z-index: 2;
+	width: 180px;
+	height: 420px;
+	background-color: pink;
+}
 .header {
 	height: 42px;
 	/*background-color: pink;*/
@@ -243,6 +255,7 @@ a {
 	width: 1215px;
 }
 .box_bd ul li {
+	position: relative;
 	float: left;
 	margin-right: 15px;
 	margin-bottom: 15px;
@@ -256,6 +269,12 @@ a {
 .box_bd ul li img {
 	/*图片比较宽，放不下，以下代码可以让图片与父元素等宽*/
 	width: 100%;
+}
+.box_bd .hot {
+	position: absolute;
+	top: 0;
+	right: -4px;
+	width: 40px;
 }
 .box_bd ul li h4 {
 	margin: 20px;
