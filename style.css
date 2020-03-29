@@ -1,0 +1,275 @@
+/*css初始化代码  css reset*/
+/*清除元素默认的内外边距*/
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #f3f5f7;
+	height: 3000px;
+}
+li {
+	list-style: none;
+}
+/*去掉button默认自带的边框*/
+button {
+	border:none;
+}
+a {
+	text-decoration: none;
+}
+/*清除浮动的*/
+/*.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}*/
+/*版心宽度1200px，水平居中*/
+.w {
+	width: 1200px;
+	margin: auto;
+}
+.header {
+	height: 42px;
+	/*background-color: pink;*/
+	margin: 30px auto;
+}
+.logo {
+	float: left;
+	margin-right: 60px;
+}
+.nav {
+	float: left;
+}
+.nav ul li {
+	float: left;
+}
+.nav ul li a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	margin-right: 20px;
+	font-size: 18px;
+	color:#050505;
+	text-decoration: none;
+}
+.nav ul li a:hover {
+	border-bottom: 2px solid #00a4ff;
+}
+.search {
+	float: left;
+	margin-left: 70px;
+}
+.search input {
+	float: left;
+	width: 340px;
+	height: 40px;
+	border:1px solid #00a4ff;
+	border-right: 0;
+	padding-left: 20px;
+	color: #ccc;
+}
+.search button {
+	float: left;
+	width: 50px;
+	height: 42px;
+	background: url(images/btn.png);
+}
+.user {
+	float: left;
+	height: 42px;
+	line-height: 42px;
+	margin-left: 30px;
+	font-size: 14px;
+	color: #666;
+}
+/*banner start*/
+.banner {
+	height: 420px;
+	background: #1c036c url(images/banner.jpg) no-repeat top center;
+}
+.subnav {
+	float: left;
+	width: 150px;
+	height: 420px;
+	padding: 0 20px;
+	/*黑色半透明效果*/
+	background: rgba(0, 0, 0, .3);
+}
+.subnav li {
+	height: 45px;
+	line-height: 45px;
+}
+.subnav li a {
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+.subnav li a:hover {
+	color: #00b4ff;
+}
+.subnav span {
+	float: right;
+}
+.course {
+	/*因为course子盒子有了浮动，所以就不会有外边距塌陷的问题了，标准流才会有*/
+	float: right;
+	width: 228px;
+	height: 300px;
+	margin-top: 50px;
+	background-color: #fff;
+}
+.course_hd {
+	height: 48px;
+	background-color: #9bceea;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	/*文字加粗*/
+	/*font-weight: bold;*/
+	font-weight: 700;
+	line-height: 48px;
+	margin-bottom: 10px;
+}
+.course_bd {
+	/*没有宽度的盒子，给padding不会撑开盒子*/
+	padding: 0 15px;
+}
+/*ul上面的间距有些小，要实现加宽些：以下给ul加margin-top的方式不生效，是因为父盒子中的ui子元素为标准流，发生了外边距塌陷现象*/
+/*.course_bd ul {
+	margin-top: 10px;
+}*/
+/*为实现以上效果，可以给ul加padding-top的方式*/
+.course_bd ul {
+	padding-top: 5px;
+}
+
+.course_bd li {
+	/*line-height: =height只能让单行文本垂直居中，多行时就不可以了*/
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+	margin-top: 10px;
+}
+.course_bd li h4 {
+	font-size: 16px;
+	color: #4e4e4e;
+	font-weight: 400;
+}
+.course_bd li p {
+	font-size: 12px;
+	color: #a5a5a5;
+
+}
+.all {
+	display: block;
+	height: 38px;
+	font-size: 16px;
+	color: #00a4ff;
+	font-weight: 700;
+	letter-spacing: 2px;
+	border: 1px solid #22b0ff;
+	text-align: center;
+	line-height: 38px;
+}
+.all:hover {
+	background-color: #00a4ff;
+	color: #fff;
+}
+/*baner end*/
+/*goods---start*/
+.goods {
+	height: 60px;
+	background-color: #fff;
+	margin-top: 8px;
+	/*给盒子加个阴影*/
+	box-shadow: 2px 2px 2px rgba(0,0,0, .2);
+	/*行高会继承，父元素设置了行高=高垂直居中，子元素会自动继承该样式*/
+	line-height: 60px;
+	/*font-  line-  text-  color 这四个样式会继承*/
+}
+.goods h3 {
+	float: left;
+	margin: 0 30px;
+	font-size: 16px;
+	color: #00a4ff;
+	font-weight: 700;
+}
+.goods-item {
+	float: left;
+	color: #bfbfbf;
+}
+.goods-item a {
+	font-size: 16px;
+	color: #050505;
+	margin: 0 30px;
+}
+.mod {
+	float: right;
+	font-size: 14px;
+	color: #00a4ff;
+	margin-right: 28px;
+}
+/*goods---end*/
+/*box ---start*/
+.box {
+	margin-top: 15px;
+}
+.box_hd {
+	height: 60px;
+	line-height: 60px;
+}
+.box_hd h3 {
+	float: left;
+	font-size: 20px;
+	font-weight: 400;
+	color: #494949;
+}
+.box_hd a {
+	float: right;
+	font-size: 12px;
+	color: #a5a5a5;
+	margin-right: 26px;
+}
+.box_bd {
+	/*不要给高度，因为行数可能随时会变*/
+	/*子元素宽度超过父元素是可以的，为了能装下子元素，把父元素版心1200放大margin-right的15像素，就能装下子元素5个盒子了*/
+	width: 1215px;
+}
+.box_bd ul li {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	height: 270px;
+	width: 228px;
+	background-color: #fff;
+}
+.box_bd li:hover {
+	box-shadow: 2px 2px 2px rgba(0,0,0, .3);
+}
+.box_bd ul li img {
+	/*图片比较宽，放不下，以下代码可以让图片与父元素等宽*/
+	width: 100%;
+}
+.box_bd ul li h4 {
+	margin: 20px;
+	font-size: 14px;
+	color: #050505;
+	font-weight: 400;
+}
+.box_bd ul li p {
+	margin: 0px 20px;
+	font-size: 12px;
+	color: #999999;
+}
+.box_bd ul li p span {
+	color: #ff7c2d;
+}
+/*box---end*/
+//*box---end*//
