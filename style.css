@@ -19,7 +19,7 @@ a {
 	text-decoration: none;
 }
 /*清除浮动的*/
-/*.clearfix:before,
+.clearfix:before,
 .clearfix:after {
 	content: "";
 	display: table;
@@ -29,7 +29,7 @@ a {
 }
 .clearfix {
 	*zoom: 1;
-}*/
+}
 /*版心宽度1200px，水平居中*/
 .w {
 	width: 1200px;
